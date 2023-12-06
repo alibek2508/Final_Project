@@ -8,4 +8,14 @@ html {
           box-sizing: border-box;
   text-decoration: none;
   list-style: none;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.main-section {
+  height: 1044px;
+  background-color: #FEF3C7;
 }/*# sourceMappingURL=main.css.map */
