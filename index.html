@@ -7,11 +7,51 @@
     <title>Document</title>
   </head>
   <body>
+    <!-- Первая секция -->
     <div class="main-section">
       <div class="container main-section__nav-container">
-        <header class="main-section__header"></header>
-        <nav class="main-section__nav-menu"></nav>
-        <div class="main-section__button"></div>
+        <!-- Навигационный меню -->
+        <header class="main-section__header">
+          <div class="main-section__logo">Collers</div>
+        </header>
+        <nav class="main-section__nav nav-menu">
+          <ul class="nav-menu__list">
+            <li class="nav-menu__item">Products</li>
+            <li class="nav-menu__item">Solutions</li>
+            <li class="nav-menu__item">Pricing</li>
+            <li class="nav-menu__item">Resources</li>
+            <li class="nav-menu__item">Log In</li>
+          </ul>
+        </nav>
+        <div class="main-section__btn buttons">
+          <button class="buttons__main-btn">Sign up now</button>
+        </div>
+      </div>
+      <div class="container main-section__content-container">
+        <!-- левая часть первой секций -->
+        <div class="left-wrapper">
+          <h1 class="left-wrapper__title title">Collectible Sneakers</h1>
+          <p class="left-wrapper__text">
+            Sit elit feugiat turpis sed integer integer accumsan turpis. Sed
+            suspendisse nec lorem mauris. Pharetra, eu imperdiet ipsum ultrices
+            amet.
+          </p>
+          <div class="left-wrapper__button_second buttons">
+            <button class="buttons__main-btn">Sign up now</button>
+            <div class="left-wrapper__video-play">
+              <img src="./icons/Vector_Play.svg" alt="icon_play" />
+              <h2 class="text-demo">Watch Demo</h2>
+            </div>
+          </div>
+        </div>
+        <!-- правая часть первой секций -->
+        <div class="right-wrapper">
+          <img
+            class="right-wrapper__img"
+            src="./images/Col.svg"
+            alt="sneakers_img"
+          />
+        </div>
       </div>
     </div>
   </body>
