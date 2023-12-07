@@ -12,7 +12,7 @@ html {
 }
 
 .container {
-  max-width: 1140px;
+  max-width: 1280px;
   margin: 0 auto;
 }
 
@@ -55,8 +55,90 @@ html {
   grid-column: 11/span 2;
 }
 .main-section__content-container {
+  position: relative;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 2fr 1fr;
+  gap: 80px;
+  padding-top: 80px;
+}
+
+.left-wrapper {
+  display: grid;
+  align-self: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  gap: 32px;
+}
+.left-wrapper__text {
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  color: #0F172A;
+}
+.left-wrapper__button_second {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+.left-wrapper__video-play {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+}
+.left-wrapper__video-img {
+  width: 24px;
+}
+.left-wrapper__text-demo {
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: #78350F;
+}
+
+.right-wrapper {
+  position: relative;
+  display: grid;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.right-wrapper__img {
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+  width: 486px;
+}
+.right-wrapper__main-rectengle {
+  position: absolute;
+  top: 56px;
+  right: 67px;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 367px;
+  height: 372px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  border-radius: 50px;
+  background: var(--amber-400, #FBBF24);
 }
 
 .buttons__main-btn {
@@ -98,4 +180,13 @@ html {
   line-height: 24px;
   letter-spacing: 0.5px;
   color: #78350F;
+}
+
+.title {
+  font-family: Roboto;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 110%;
+  color: #0F172A;
 }/*# sourceMappingURL=main.css.map */
