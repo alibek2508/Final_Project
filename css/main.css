@@ -18,7 +18,7 @@ html {
 
 .main-section {
   height: 1044px;
-  background-color: #FEF3C7;
+  background-color: #fffbec;
 }
 .main-section__nav-container {
   display: grid;
@@ -179,6 +179,9 @@ html {
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.5px;
+  color: #78350F;
+}
+.nav-menu__link {
   color: #78350F;
 }
 

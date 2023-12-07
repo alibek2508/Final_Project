@@ -1,15 +1,18 @@
 .main-section
     height: 1044px
-    background-color: #FEF3C7
+    background-color: #fffbec
+
     &__nav-container
         display: grid
         grid-template-columns: repeat(12, 1fr)
         justify-content: space-between
         align-items: center
         padding: 24px 0
+
     &__header
         display: grid
         grid-column: 1/span 1
+
     &__logo
         font-family: Roboto
         font-size: 32px
@@ -22,9 +25,11 @@
         display: grid
         grid-column: 5/span 6
         justify-content: right
+
     &__btn
         display: grid
         grid-column: 11/span 2
+
     &__content-container
         position: relative
         display: grid
@@ -96,6 +101,8 @@
         padding: 12px 8px
         margin-right: 16px
         +text-regular
+    &__link
+        color: $color-brown
 
 .title
     font-family: Roboto
