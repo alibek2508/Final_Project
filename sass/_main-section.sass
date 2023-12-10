@@ -1,7 +1,7 @@
 .main-section
     height: 1044px
+    background: url('../images/bg_main_section.svg') center top 0px/ cover, no-repeat
     background-color: #fffbec
-
     &__nav-container
         display: grid
         grid-template-columns: repeat(12, 1fr)
@@ -36,6 +36,35 @@
         grid-template-columns: 2fr 1fr
         gap: 80px
         padding-top: 80px
+        margin-bottom: 180px
+
+.box-container
+    position: relative
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    justify-content: space-between
+    gap: 80px
+    &__box
+        display: grid
+        gap: 16px
+    &__title
+        +text-title
+    &__text
+        +text-p
+    &__img-container
+        position: relative
+    &__rectangle
+        position: absolute
+        left: 26px
+        top: -2px
+    &__rectangle-two
+        position: absolute
+        left: 478px
+        top: -2px
+    &__rectangle-three
+        position: absolute
+        right: 285px
+        top: -2px
 
 .left-wrapper
     display: grid
@@ -93,6 +122,15 @@
         +text-regular
         color: $color-brown
         background-color: #FEF3C7
+    &__main-btn_white-btn
+        border-radius: 8px
+        border: 2px solid #FFF
+        +text-title
+        color: #fff
+        background: #0F172A
+        height: 64px
+    &__shoping-card
+        margin-right: 16px
 
 .nav-menu
     &__list
