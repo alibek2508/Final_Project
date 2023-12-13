@@ -2,6 +2,8 @@
 .second-section
     background-color: #0F172A
     padding: 80px 0 80px 0
+    &__content
+        position: relative
     &__bg-box
         display: flex
         height: 220px
@@ -30,12 +32,14 @@
         gap: 48px
         padding: 80px 0
     &__content-box
+        position: relative
         border-radius: 10px
         border: 1px solid #0F172A
         box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.07), 0px 25px 50px -12px rgba(255, 255, 255, 0.25)
         z-index: 1
     &__text-box
         padding: 32px
+        background: #0F172A
     &__title-text
         +title
         color: #fff
@@ -47,3 +51,49 @@
     &__img
         border-top-left-radius: 10px
         border-top-right-radius: 10px
+    &__rectangle-one
+        position: absolute
+        bottom: 100px
+        left: -40px
+        width: 271px
+        height: 271px
+        border-radius: 50px
+        opacity: 0.75
+        background: #BE185D
+        z-index: 0
+    &__rectangle-two
+        position: absolute
+        top: 112px
+        left: 419px
+        width: 161px
+        height: 161px
+        border-radius: 50px
+        opacity: 0.75
+        background: #0369A1
+    &__rectangle-three
+        position: absolute
+        bottom: 129px
+        right: 411px
+        width: 130px
+        height: 130px
+        border-radius: 30px
+        opacity: 0.75
+        background: #B45309
+    &__rectangle-four
+        position: absolute
+        bottom: 54px
+        right: 92px
+        width: 202px
+        height: 202px
+        border-radius: 30px
+        opacity: 0.75
+        background: #A21CAF
+    &__rectangle-five
+        position: absolute
+        bottom: 298px
+        right: -43px
+        width: 232px
+        height: 232px
+        border-radius: 50px
+        opacity: 0.75
+        background: #15803D
