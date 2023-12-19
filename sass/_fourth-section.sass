@@ -1,0 +1,62 @@
+.fourth-section
+    min-height: 816px
+    background-color: #fffbec
+    padding: 160px 80px
+
+    .fourth_wrapper
+        height: 496px
+        display: grid
+        grid-template-columns: repeat(10,1fr)
+        padding: 80px
+        border-radius: 30px
+        background: var(--White, #FFF)
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.07), 0px 20px 25px -5px rgba(0, 0, 0, 0.10)
+
+        &_left
+            grid-column: 1/ span 5
+            .title
+                +label
+                margin-top: 31px
+            .wrapper_block
+                &_top
+                    display: flex
+                    align-items: center
+                    gap: 8px
+                    margin-top: 24px
+                    .text
+                        +subtitle
+                        font-size: 20px
+                &_center
+                    display: flex
+                    align-items: center
+                    gap: 8px
+                    margin-top: 8px
+                    .text
+                        +subtitle
+                        font-size: 20px
+                &_bottom
+                    display: flex
+                    align-items: center
+                    gap: 8px
+                    margin-top: 8px
+                    .text
+                        +subtitle
+                        font-size: 20px
+            .button
+                margin-top: 24px
+                &_btn
+                    padding: 16px 32px
+                    +text-regular
+                    font-size: 20px
+                    color: $color-brown
+                    background-color: #FEF3C7
+                    border-radius: 8px
+                    border: 2px solid var(--amber-900, #78350F)
+                    cursor: pointer
+        &_right
+            position: relative
+            grid-column: 6/span 5
+            .wrapper_img
+                position: absolute
+                top: -145px
+                right: -120px

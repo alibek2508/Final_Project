@@ -1,0 +1,56 @@
+.fifth-section
+    height: 996px
+    background-color: #fffbec
+    padding: 80px 80px 128px 80px
+    background: url('../images/fifth_bg_main.png') center top 0px/ cover, no-repeat
+
+    .title
+        +label
+    .subtitle
+        +subtitle
+        margin-top: 32px
+
+    .fifth_wrapper
+        margin-top: 80px
+        display: grid
+        grid-template-columns: repeat(12,1fr)
+        &__text
+            +text-title
+
+        &_left
+            grid-column: 1/span 3
+            .menu
+                display: grid
+                grid-row-gap: 16px
+                li
+                    display: flex
+                    padding: 16px
+                    gap: 16px
+                    a
+                        +title
+                li:hover
+                    width: 260px
+                    height: 56px
+                    border-radius: 8px
+                    background: var(--White, #FFF)
+                    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.07), 0px 4px 6px -1px rgba(0, 0, 0, 0.10)
+                    background: url(../icons/arrow-right.svg) right no-repeat
+
+        &_right
+            position: relative
+            grid-column: 4/span 7
+            .picture
+                position: absolute
+            .picture:active
+                z-index: 1
+
+            .picturetwo
+                position: absolute
+                top: 105px
+                left: 94px
+            .picturetwo:active
+                z-index: 2
+            .picturethree
+                position: absolute
+                top: 202px
+                left: 688px

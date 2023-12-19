@@ -1,0 +1,72 @@
+.reviews-section
+    position: relative
+    max-height: 732px
+    padding: 80px 0 80px 0
+    &__content-container
+        position: relative
+    &__title
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__title-text
+        +main-title
+
+    &__nav
+        display: flex
+        gap: 24px
+        align-items: center
+
+    &__img-arrow
+        width: 24px
+        height: 24px
+    &__nav-bar
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 48px
+        height: 48px
+        border-radius: 100px
+        border: 2px solid var(--Amber-900, #78350F)
+        box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.07), 0px 1px 3px 0px rgba(0, 0, 0, 0.10)
+        &:hover
+            transform: scale(1.1)
+    &__card-list
+        display: flex
+        gap: 24px
+        justify-content: center
+        margin-top: 80px
+
+    &__card
+        display: flex
+        width: 384px
+        flex-direction: column
+        align-items: flex-start
+        border-radius: 20px
+        gap: 16px
+        padding: 32px
+        border: 1px solid var(--Blue-Gray-200, #E2E8F0)
+        background: var(--White, #FFF)
+        box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.07), 0px 10px 15px -3px rgba(0, 0, 0, 0.10)
+        &:hover
+            transform: scale(1.1)
+
+    &__card-bg
+        width: 1360px
+        height: 421px
+        position: absolute
+        left: -41px
+        top: 95px
+        z-index: -1
+        background: var(--Amber-200, #FDE68A)
+    &__text
+        +title
+        font-weight: 400
+        line-height: 160%
+    &__card-user
+        display: flex
+        align-items: center
+        gap: 16px
+    &__user-name
+        +text-p
+    &__user-prof
+        +text-regular

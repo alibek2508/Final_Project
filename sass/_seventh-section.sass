@@ -1,0 +1,57 @@
+.seventh-section
+    min-height: 763px
+    padding: 80px
+    background: url('../images/seventh-section_bg.png') right bottom -500px/cover no-repeat
+
+    .top-wrapper
+        display: grid
+        grid-template-columns: repeat(12,1fr)
+        padding: 12px
+        &__title
+            +label
+            grid-column: 1/span 9
+        &__btn
+            display: flex
+            padding: 7px
+            grid-column: 11/span 2
+            cursor: pointer
+    .center-wrapper
+        display: grid
+        grid-template-columns: repeat(12,1fr)
+        column-gap: 24px
+        margin-top: 80px
+        .main-cards
+            border: 1px solid var(--Blue-Gray-200, #E2E8F0)
+            background: var(--White, #FFF)
+            box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.07), 0px 10px 15px -3px rgba(0, 0, 0, 0.10)
+            width: 302px
+            height: 461px
+            border-radius: 10px
+            cursor: pointer
+
+            &__btn
+                display: flex
+            &__img
+                width: 100%
+                border-radius: 10px 10px 0 0
+
+        .main-cards:hover
+            scale: (1.1)
+
+        .box
+            padding: 32px 32px 0px 32px
+            &__title
+                +card-title
+            &__subtitle
+                margin-top: 16px
+                +text-p
+                margin-bottom: 16px
+
+    .buttons
+        &__card-btn
+            width: 159px
+            height: 48px
+            border: none
+            background: #fff
+            +text-regular
+            cursor: pointer
