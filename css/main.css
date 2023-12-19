@@ -169,6 +169,14 @@ html {
   position: relative;
   z-index: 2;
   width: 486px;
+  -webkit-transition: -webkit-transform 1.5s;
+  transition: -webkit-transform 1.5s;
+  transition: transform 1.5s;
+  transition: transform 1.5s, -webkit-transform 1.5s;
+}
+.right-wrapper__img:hover {
+  -webkit-transform: rotate(30deg) scale(1.1);
+          transform: rotate(30deg) scale(1.1);
 }
 .right-wrapper__main-rectengle {
   position: absolute;
@@ -213,6 +221,10 @@ html {
   color: #78350F;
   color: #78350F;
   background-color: #FEF3C7;
+  -webkit-transition: -webkit-transform 1.2s;
+  transition: -webkit-transform 1.2s;
+  transition: transform 1.2s;
+  transition: transform 1.2s, -webkit-transform 1.2s;
 }
 .buttons__main-btn:hover {
   -webkit-transform: scale(1.1);
@@ -329,6 +341,10 @@ html {
   -webkit-box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.07), 0px 25px 50px -12px rgba(255, 255, 255, 0.25);
           box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.07), 0px 25px 50px -12px rgba(255, 255, 255, 0.25);
   z-index: 1;
+  -webkit-transition: -webkit-transform 1.2s;
+  transition: -webkit-transform 1.2s;
+  transition: transform 1.2s;
+  transition: transform 1.2s, -webkit-transform 1.2s;
 }
 .second-section__content-box:hover {
   -webkit-transform: scale(1.1);
@@ -1041,6 +1057,10 @@ html {
   border: 2px solid var(--Amber-900, #78350F);
   -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.07), 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.07), 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
+  -webkit-transition: -webkit-transform 1.2s;
+  transition: -webkit-transform 1.2s;
+  transition: transform 1.2s;
+  transition: transform 1.2s, -webkit-transform 1.2s;
 }
 .reviews-section__nav-bar:hover {
   -webkit-transform: scale(1.1);
@@ -1075,6 +1095,10 @@ html {
   background: var(--White, #FFF);
   -webkit-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.07), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.07), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  -webkit-transition: -webkit-transform 1.2s;
+  transition: -webkit-transform 1.2s;
+  transition: transform 1.2s;
+  transition: transform 1.2s, -webkit-transform 1.2s;
 }
 .reviews-section__card:hover {
   -webkit-transform: scale(1.1);
